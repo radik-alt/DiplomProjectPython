@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link href="{{ url_for("static", filename="css/style.css") }}" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/main_styles.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/responsive.css") }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <section class="headBlock">
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid navContainer">
+                <a class="nav_header" href="#">Lingua</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse nav" id="navbarText">
+                <ul class="navbar-nav m-auto justify-content-center">
+                    {% for m in menu %}
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="{{ m.url }}">{{ m.name }}</a>
+                  </li>
+                    {% endfor %}
+                </ul>
+              <form class="d-flex">
+                <button class="btn btn-outline-success" type="submit">Войти</button>
+              </form>
+              </div>
+            </div>
+        </nav>
+
+        <div class="divHeadBlock">
+            <div class="divHeadName">
+                <h1 class="headName">Сложно ли выучить чешский язык?</h1>
+                <div class="lineHead"></div>
+                <p>Давай разберемся как выучить язык</p>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary" type="button">Давай начнем</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sectionThree margSection">
+
+        <div class="">
+            <div class="">
+                <h2 class="">Причины учить чешский язык</h2>
+            </div>
+            <div class="threeMargin">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="divBackItem">
+                            <div class="backItem"></div>
+                            <span class="numberItem">1</span>
+                        </div>
+                        <div class="container">
+                            <h5 class="headItem">Переезд в Чехию.</h5>
+                            <p class="textItem">Нахожусь на связи 24/7, выполняю работу в срок.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="divBackItem2">
+                            <div class="backItem2"></div>
+                            <span class="numberItem2">2</span>
+                        </div>
+                        <div class="container">
+                            <h5 class="headItem">Равзитие памяти.</h5>
+                            <p class="textItem">Работа выполняется качественно и в указанные сроки</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="divBackItem3">
+                            <div class="backItem3"></div>
+                            <span class="numberItem3">3</span>
+                        </div>
+                        <div class="container">
+                            <h5 class="headItem">Расширение рабочих связей.</h5>
+                            <p class="textItem">Демократичные цены.
+                                Вы останетесь довольны или верну деньги!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="twoPage margSection" id="">
+
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="{{ url_for("static", filename="image/praga_people.jpg") }}" class="ImageTwo" alt=""/>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="aboutMe">
+                        <div>
+                            <h2 class="headAbout">О обучение</h2>
+                        </div>
+                        <div class="textAboutMe">
+                            <p>Меня зовут Александр Романов. Я являюсь дипломированным лингвистом и самозанятым с опытом работы более 7 лет.</p>
+                            <p>Я занимаюсь профессиональным переводом технической документации,
+                                 аудио, видео, текстов, субтитров, кино и сериалов, различных документов
+                                 с русского на Английский, Немецкий, Китайский и переводом на Русский язык
+                                  со многих языков мира, транскрибацией аудио и видео, созданием и вшиванием субтитров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+
+
+
+
+	<footer class="footer">
+
+
+
+
+	</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
