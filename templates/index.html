@@ -13,7 +13,9 @@
 
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid navContainer">
-                <a class="nav_header" href="#">Lingua</a>
+                <div class="logo_nav">
+                    <a class="nav_header" href="#">Lingua</a>
+                </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,8 +28,10 @@
                   </li>
                     {% endfor %}
                 </ul>
-              <form class="d-flex">
-                <button class="btn btn-outline-success" type="submit">Войти</button>
+              <form class="">
+                  <div class="div_btn_account">
+                      <button class="btn btn-outline-success" type="submit"><a href="/auth">Войти</a></button>
+                  </div>
               </form>
               </div>
             </div>
@@ -36,11 +40,13 @@
         <div class="divHeadBlock">
             <div class="divHeadName">
                 <h1 class="headName">Сложно ли выучить чешский язык?</h1>
-                <div class="lineHead"></div>
-                <p>Давай разберемся как выучить язык</p>
+                <div class="div_linn_head">
+                    <div class="lineHead"></div>
+                </div>
+                <p class="down_header">Давай разберемся как выучить язык</p>
             </div>
             <div>
-                <button class="btn btn-outline-primary" type="button">Давай начнем</button>
+                <button class="btn_click" type="button">Давай начнем</button>
             </div>
         </div>
 
@@ -50,7 +56,15 @@
 
         <div class="">
             <div class="">
-                <h2 class="">Причины учить чешский язык</h2>
+                <div>
+                   <h2 class="tileBlock">Какие преимущества дает учеба в Чехии?</h2>
+                </div>
+                <div style="margin: 25px">
+                    <p class="down_header2">Обучение в Чехии – это инвестиции в ваше будущее. После того как у вас будет хороший уровень<br> языка можно поступать в чешские ВУЗы на бесплатное обучение.</p>
+                </div>
+                <div class="div_linn_head">
+                    <div class="lineHead2"></div>
+                </div>
             </div>
             <div class="threeMargin">
                 <div class="row">
@@ -60,6 +74,9 @@
                             <span class="numberItem">1</span>
                         </div>
                         <div class="container">
+                            <div>
+                                <img src="" alt="">
+                            </div>
                             <h5 class="headItem">Переезд в Чехию.</h5>
                             <p class="textItem">Нахожусь на связи 24/7, выполняю работу в срок.</p>
                         </div>
@@ -70,6 +87,9 @@
                             <span class="numberItem2">2</span>
                         </div>
                         <div class="container">
+                            <div>
+                                <img src="" alt="">
+                            </div>
                             <h5 class="headItem">Равзитие памяти.</h5>
                             <p class="textItem">Работа выполняется качественно и в указанные сроки</p>
                         </div>
@@ -80,6 +100,9 @@
                             <span class="numberItem3">3</span>
                         </div>
                         <div class="container">
+                            <div>
+                                <img src="" alt="">
+                            </div>
                             <h5 class="headItem">Расширение рабочих связей.</h5>
                             <p class="textItem">Демократичные цены.
                                 Вы останетесь довольны или верну деньги!</p>
@@ -100,7 +123,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="aboutMe">
                         <div>
-                            <h2 class="headAbout">О обучение</h2>
+                            <h2 class="headAbout">О Чехии</h2>
                         </div>
                         <div class="textAboutMe">
                             <p>Меня зовут Александр Романов. Я являюсь дипломированным лингвистом и самозанятым с опытом работы более 7 лет.</p>
@@ -116,13 +139,108 @@
 
     </section>
 
+    <section class="margSection sectionThree">
+
+        <div>
+
+            <div class="">
+                <h2 class="">Впечатления от Чехии</h2>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{{ url_for("static", filename="image/praga.jpg") }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{{ url_for("static", filename="image/praga.jpg") }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{{ url_for("static", filename="image/praga.jpg") }}" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+
+        </div>
+
+    </section>
 
 
+    <section class="margSectionUpper sectionFour">
+
+        <div class="">
+
+            <div class="">
+                <h2 class="">Полезный матреиал для начинающих!</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div>
+                        <div>
+                            <img src="" alt="">
+                            <p>PDF файл</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="">
+            <h2 class=""></h2>
+        </div>
+
+    </section>
 
 
 	<footer class="footer">
 
+        <div class="row">
+            <div class="col-12">
 
+                <!-- Contact -->
+                    <section class="contact">
+                        <header>
+                            <h3>Nisl turpis nascetur interdum?</h3>
+                        </header>
+                        <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+                            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                        </ul>
+                    </section>
+
+                <!-- Copyright -->
+                    <div class="copyright">
+                        <ul class="menu">
+                            <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+
+        </div>
 
 
 	</footer>

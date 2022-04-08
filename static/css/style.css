@@ -6,6 +6,7 @@
     background-image: url("../image/praga.jpg");
     background-position: center;
     background-repeat: no-repeat no-repeat;
+    opacity: 0.9;
     font-size: 60px;
     font-weight: 300;
     color: white;
@@ -36,14 +37,16 @@ a {
     padding-top: 100px;
 }
 
-.btnClick {
-    background-color: #DB9A64;
-    border: 1px solid white;
+.btn_click {
+    border: 2px solid #dab80f;
+    background: none;
     color: white;
     box-sizing: border-box;
     font-size: 18px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -78,10 +81,20 @@ a {
     margin-right: 30px;
 }
 
+
+.logo_nav{
+    margin-left: 50px;
+    /*padding-bottom: 30px;*/
+}
+
+.div_btn_account{
+    margin-right: 50px;
+}
+
 .nav_header{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
-    color: #fd6a70;
+    color: white;
 }
 
 .nav-link{
@@ -131,6 +144,43 @@ a {
     text-align: center;
 }
 
+.div_linn_head{
+    display: flex;
+    justify-content: center;
+}
+
+.lineHead{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: white;
+    height: 2px;
+    width: 100px;
+}
+
+.lineHead2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: #DB9A64;
+    height: 2px;
+    width: 100px;
+}
+
+.down_header{
+    font-size: 20px;
+}
+
+.down_header2{
+    color: #626262;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tileBlock{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
 
 /*2 section*/
 .ImageTwo{
@@ -141,20 +191,20 @@ a {
 .headAbout{
     text-align: center;
     tab-size: 42px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .aboutMe{
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .textAboutMe{
     text-align: center;
     font-size: 18px;
     margin-top: 35px;
-    color: #000000;
+    color: #626262;
 }
 
 .containerItem{
@@ -186,7 +236,7 @@ a {
 
 /* 3 секция */
 .container {
-    border: 1px solid #0037F9;
+    border: 1px solid #DB9A64;
     box-sizing: border-box;
     padding: 25px;
     margin-top: 15px;
@@ -196,7 +246,7 @@ a {
 }
 
 .backItem{
-    background: #0037F9;
+    background: #DB9A64;
     filter: blur(14px);
     width: 55px;
     height: 55px;
@@ -260,13 +310,15 @@ a {
 }
 
 .textItem {
+    text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 28px;
 }
 
 .headItem{
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
